@@ -13,19 +13,23 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/factures', function (Request $request) {
-    return $request->factures();
-});
+Route::get('factures','FactureController@getAllFactures');
+Route::get('factures/{id}','FactureController@getFacture');
 
-Route::middleware('auth:api')->get('/reservations', function (Request $request) {
-    return $request->reservations();
+Route::get('reservations', 'ReservationsController@getAllReservations');
+Route::get('reservations{id}', 'ReservationsController@getReservation');
 
-});Route::middleware('auth:api')->get('/clients', function (Request $request) {
-    return $request->clients();
+Route::get('clients', 'ClientsController@getAllClients');
+Route::get('clients/{id}', 'ClientsController@getClient');
 
-});Route::middleware('auth:api')->get('/commandes', function (Request $request) {
-    return $request->commandes();
+Route::get('commandes', 'CommandesController@getAllCommandes');
+Route::get('commandes/{id}', 'CommandesController@getCommande');
 
-});Route::middleware('auth:api')->get('/plats', function (Request $request) {
-    return $request->plats();
-});
+Route::get('plats', 'PlatsController@getAllPlats');
+Route::get('plats/{id}', 'PlatsController@getPlat');
+
+Route::post('factures', 'FactureController@addFacture');
+Route::post('reservations', 'ReservationsController@addReservation');
+Route::post('clients', 'ClientsController@addClient');
+Route::post('commande', 'CommandeController@addCommande');
+
