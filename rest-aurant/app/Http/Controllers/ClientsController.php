@@ -1,20 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Htpp\Controllers\Controller;
+use App\Htpp\Controllers;
 use App\Client;
 
 use Illuminate\Http\Request;
 
-class ClientController extends Controller
+class ClientsController extends Controller
 {
     public function getAllClients()
     {
-        return Clients::all();
+        return Client::all();
     }
 
     public function getClient($clientId)
     {
-        return Clients::find($clientId);
+        return Client::find($clientId);
     }
 }

@@ -1,19 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Htpp\Controllers\Controller;
+use App\Htpp\Controllers;
 use App\Commande;
 use Illuminate\Http\Request;
 
-class CommandeController extends Controller
+class CommandesController extends Controller
 {
     public function getAllCommandes()
     {
-        return Commandes::all();
+        return Commande::all();
     }
 
     public function getCommande($commandesId)
     {
-        return Commandes::find($commandesId);
+        return Commande::find($commandesId);
     }
 }

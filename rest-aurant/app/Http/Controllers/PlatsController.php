@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Htpp\Controllers\Controller;
+use App\Htpp\Controllers;
 use App\Plats;
 
 use Illuminate\Http\Request;

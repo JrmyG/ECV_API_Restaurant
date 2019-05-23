@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Htpp\Controllers\Controller;
+use App\Htpp\Controllers;
 use App\Reservation;
 
 use Illuminate\Http\Request;
 
-class ReservationController extends Controller
+class ReservationsController extends Controller
 {
     public function getAllReservations()
     {
@@ -18,5 +18,5 @@ class ReservationController extends Controller
         return Reservation::find($reservationId);
     }
 
-    public function addReservation($)
+    // public function addReservation($)
 }

@@ -1,20 +1,20 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Htpp\Controllers\Controller;
+use App\Htpp\Controllers;
 use App\Facture;
 
 use Illuminate\Http\Request;
 
-class FactureController extends Controller
+class FacturesController extends Controller
 {
     public function getAllFactures()
     {
-        return Factures::all();
+        return Facture::all();
     }
 
     public function getFacture($factureId)
     {
-        return Factures::find($factureId);
+        return Facture::find($factureId);
     }
 }
