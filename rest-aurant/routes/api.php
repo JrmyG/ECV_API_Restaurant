@@ -33,3 +33,7 @@ Route::post('reservations', 'ReservationsController@addReservation');
 Route::post('clients', 'ClientsController@addClient');
 Route::post('commande', 'CommandeController@addCommande');
 
+Route::delete('factures', 'FactureController@deleteFacture');
+Route::delete('reservations', 'ReservationsController@deleteReservation');
+Route::delete('clients', 'ClientsController@deleteClient');
+Route::delete('commande', 'CommandeController@deleteCommande');
