@@ -1,16 +1,11 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
+    <div>
+        <input type="text" v-model="login" >
+        <input type="text" v-model="password" >
+        <input type="submit" onclick="submit">
+        <p> Login {{ login }} </p>
+        <p> Pwd {{ password }} </p>
 
-                    <div class="card-body">
-                        I'm an example component.
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </template>
 
@@ -18,6 +13,13 @@
     export default {
         mounted() {
             console.log('Component mounted.')
+        },
+
+        data() {
+            return{
+                'login' : '',
+                'password' : ''
+            }
         }
     }
 </script>

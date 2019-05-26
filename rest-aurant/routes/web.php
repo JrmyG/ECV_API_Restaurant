@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/factures', function() {
-    return 'Page Factures';
+    return view('factures');
 });
 
 Route::get('/factures/{id}', function($id) {
@@ -24,7 +24,7 @@ Route::get('/factures/{id}', function($id) {
 });
 
 Route::get('/reservations', function() {
-    return 'Page Reservations';
+    return view('reservations');
 
 });Route::get('/reservations/{id}', function($id) {
     return 'Page Reservations '. $id;
@@ -32,7 +32,7 @@ Route::get('/reservations', function() {
 });
 
 Route::get('/clients', function() {
-    return 'Page Clients';
+    return view('clients');
 });
 
 Route::get('/clients/{id}', function($id) {
@@ -40,7 +40,7 @@ Route::get('/clients/{id}', function($id) {
 });
 
 Route::get('/commandes', function() {
-    return 'Page Commandes';
+    return view('commandes');
 });
 
 Route::get('/commandes/{id}', function($id) {
@@ -48,7 +48,7 @@ Route::get('/commandes/{id}', function($id) {
 });
 
 Route::get('/plats', function() {
-    return 'Page Plats';
+    return view('plats');
 });
 
 Route::get('/plats/{id}', function($id) {
