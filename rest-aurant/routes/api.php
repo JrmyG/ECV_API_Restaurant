@@ -17,45 +17,45 @@ use Illuminate\Http\Request;
  * GET ALL ITEMS OF A TABLE
  */
 
-Route::get('factures','FacturesController@getAllFactures');
-Route::get('reservations', 'ReservationsController@getAllReservations');
-Route::get('clients', 'ClientsController@getAllClients');
-Route::get('commandes', 'CommandesController@getAllCommandes');
-Route::get('plats', 'PlatsController@getAllPlats');
+Route::get('factures','FacturesController@index');
+Route::get('reservations', 'ReservationsController@index');
+Route::get('clients', 'ClientsController@index');
+Route::get('commandes', 'CommandesController@index');
+Route::get('plats', 'PlatsController@index');
 
 /**
  * GET A SINGLE ITEM BY HIS ID
  */
 
-Route::get('factures/{id}','FacturesController@getFacture');
-Route::get('reservations{id}', 'ReservationsController@getReservation');
-Route::get('clients/{id}', 'ClientsController@getClient');
-Route::get('commandes/{id}', 'CommandesController@getCommande');
-Route::get('plats/{id}', 'PlatsController@getPlat');
+Route::get('factures/{id}','FacturesController@show');
+Route::get('reservations{id}', 'ReservationsController@show');
+Route::get('clients/{id}', 'ClientsController@show');
+Route::get('commandes/{id}', 'CommandesController@show');
+Route::get('plats/{id}', 'PlatsController@show');
 
 /**
  * ADD AN ITEM
  */
 
-Route::post('facture', 'FacturesController@addFacture');
-Route::post('reservation', 'ReservationsController@addReservation');
-Route::post('client', 'ClientsController@addClient');
-Route::post('commande', 'CommandesController@addCommande');
+Route::post('facture', 'FacturesController@store');
+Route::post('reservation', 'ReservationsController@store');
+Route::post('client', 'ClientsController@store');
+Route::post('commande', 'CommandesController@store');
 
 /**
  * UPDATE AN ITEM AN ITEM
  */
 
-Route::put('factures/{id}', 'FacturesController@updateFacture');
-Route::put('reservations/{id}', 'ReservationsController@updateReservation');
-Route::put('clients/{id}', 'ClientsController@updateClient');
-Route::put('commandes/{id}', 'CommandesController@updateCommande');
+Route::put('factures/{id}', 'FacturesController@update');
+Route::put('reservations/{id}', 'ReservationsController@update');
+Route::put('clients/{id}', 'ClientsController@update');
+Route::put('commandes/{id}', 'CommandesController@update');
 
 /**
  * DELETE AN ITEM BY HIS ID
  */
 
-Route::delete('factures/{id}', 'FacturesController@deleteFacture');
-Route::delete('reservations/{id}', 'ReservationsController@deleteReservation');
-Route::delete('clients/{id}', 'ClientsController@deleteClient');
-Route::delete('commandes/{id}', 'CommandesController@deleteCommande');
+Route::delete('factures/delete/{id}', 'FacturesController@destroy');
+Route::delete('reservations/delete/{id}', 'ReservationsController@destroy');
+Route::delete('clients/delete/{id}', 'ClientsController@destroy');
+Route::delete('commandes/delete/{id}', 'CommandesController@destroy');

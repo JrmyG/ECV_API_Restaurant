@@ -5,18 +5,35 @@ use App\Htpp\Controllers;
 use App\Reservation;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 
 class ReservationsController extends Controller
 {
-    public function getAllReservations()
+    public function index()
     {
         return Reservation::all();
     }
 
-    public function getReservation($reservationId)
+    public function show($id)
     {
-        return Reservation::find($reservationId);
+        return Reservation::find($id);
     }
 
-    // public function addReservation($)
+    public function store()
+    {
+
+    }
+
+    public function update($id)
+    {
+        $reservation = Reservation::find($id);
+        $reservation->date_heure    = Input::get('date_heure');
+        $reservation->save();
+    }
+
+    public function destroy ($id)
+    {
+        $reservation = Reservation::find($id);
+        $reservation->delete();
+    }
 }
