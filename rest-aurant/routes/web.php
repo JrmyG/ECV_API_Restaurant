@@ -14,3 +14,23 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/factures', function() {
+    return view('factures');
+});
+
+Route::get('/reservations', function() {
+    return view('reservations');
+});
+
+Route::get('/clients', function() {
+    return view('clients');
+});
+
+Route::get('/commandes', function() {
+    return view('commandes');
+});
+
+Route::get('/plats', function() {
+    return view('plats');
+});
