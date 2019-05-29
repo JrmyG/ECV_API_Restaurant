@@ -16,8 +16,8 @@ use Illuminate\Http\Request;
 Route::get('factures','FactureController@getAllFactures');
 Route::get('factures/{id}','FactureController@getFacture');
 
-Route::get('reservations', 'ReservationsController@getAllReservations');
-Route::get('reservations{id}', 'ReservationsController@getReservation');
+Route::get('reservations', 'ReservationController@getAllReservations');
+Route::get('reservations{id}', 'ReservationController@getReservation');
 
 Route::get('clients', 'ClientsController@getAllClients');
 Route::get('clients/{id}', 'ClientsController@getClient');
@@ -29,7 +29,7 @@ Route::get('plats', 'PlatsController@getAllPlats');
 Route::get('plats/{id}', 'PlatsController@getPlat');
 
 Route::post('factures', 'FactureController@addFacture');
-Route::post('reservations', 'ReservationsController@addReservation');
+Route::post('reservations', 'ReservationController@addReservation');
 Route::post('clients', 'ClientsController@addClient');
 Route::post('commande', 'CommandeController@addCommande');
 
