@@ -2,18 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f2679a5-9ce1-4d7d-b843-96d30cbe18af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/commandes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/commandes.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/factures.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/factures.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/plats.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/plats.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/reservations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/reservations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cacert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Clients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Factures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ClientsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/CommandesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/FacturesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/app/Reservations.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/factories/ClientsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/migrations/2019_05_25_150111_commandes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/seeds/ClientsSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/seeds/FacturesSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/seeds/ReservationsSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest-aurant/database/seeds/plats.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Client.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/app/Commandes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Facture.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ClientController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/CommandeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/FactureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/PlatsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/PlatsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/Reservation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/app/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/database/migrations/2019_05_16_145420_create_clients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/database/migrations/2019_05_16_145420_create_clients_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest-aurant/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,25 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest-aurant/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationsController.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ClientController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="-364">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -129,6 +133,7 @@
         <option value="$PROJECT_DIR$/rest-aurant/config/app.php" />
         <option value="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationsController.php" />
         <option value="$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ClientController.php" />
+        <option value="$PROJECT_DIR$/rest-aurant/routes/api.php" />
       </list>
     </option>
   </component>
@@ -302,17 +307,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5059000" />
+    <option name="totallyTimeSpent" value="5675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -321,7 +326,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.30985916" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -392,23 +397,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-aurant/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-aurant/app/Reservation.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationsController.php">
+    <entry file="file://$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ReservationController.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/rest-aurant/app/Http/Controllers/ClientController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-aurant/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-364">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
