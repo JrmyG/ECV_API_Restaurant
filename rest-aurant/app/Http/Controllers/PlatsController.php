@@ -11,46 +11,6 @@ use function GuzzleHttp\json_decode;
 
 class PlatsController extends Controller
 {
-    // public function index()
-    // {
-    //     $client = new \GuzzleHttp\Client(['verify' => '../../cacert.pem']);
-    //     $request = $client->get('https://www.food2fork.com/api/search?key=2614f93cf8ae5f0d64166e01bb4aab0c&q=chicken%20breast&page=2&count=5');
-    //     $response = $request->getBody();
-    //     $response = json_decode($response);
-
-    //     // dd($response);
-
-    //     $recettes = $response->recipes;
-
-    //     foreach ( $recettes as $recette )
-    //     {
-    //         $id = $recette->recipe_id;
-
-    //         $this->getPlat($id);
-    //     }
-    // }
-
-    // public function show($id)
-    // {
-    //     $client = new \GuzzleHttp\Client(['verify' => '../../cacert.pem']);
-    //     $request = $client->get('https://www.food2fork.com/api/get?key=2614f93cf8ae5f0d64166e01bb4aab0c&rId='.$id);
-    //     $response = $request->getBody();
-    //     $response = json_decode($response);
-
-    //     $name = $response->recipe->title;
-    //     $image = $response->recipe->image_url;
-    //     $ingredients = $response->recipe->ingredients;
-
-    //     var_dump($name);
-    //     var_dump($image);
-
-    //     foreach( $ingredients as $ingredient )
-    //     {
-    //         var_dump($ingredient);
-    //     }
-    //     var_dump("<br>");
-    // }
-
     public function index()
     {
         $client = new \GuzzleHttp\Client(['verify' => '../../cacert.pem']);

@@ -22,7 +22,13 @@ class FacturesController extends Controller
 
     public function store(Request $request)
     {
-        
+        $facture = new Facture();
+
+        $facture->date_heure        = Input::get('date_heure');
+        $facture->etat              = Input::get('etat');
+        $facture->save();
+
+        return($facture);
     }
 
     public function update($id)
@@ -32,6 +38,8 @@ class FacturesController extends Controller
         $facture->date_heure        = Input::get('date_heure');
         $facture->etat              = Input::get('etat');
         $facture->save();
+
+        return($facture);
     }
 
     public function destroy($id)

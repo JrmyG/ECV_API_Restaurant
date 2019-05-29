@@ -21,11 +21,14 @@ class CommandesController extends Controller
     public function store()
     {
 
+        //return($commande)
     }
 
     public function update($id)
     {
         // $commande = Commande::find($id);
+
+        //return($commande)
     }
 
     public function destroy ($id)

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Htpp\Controllers;
-use App\Client;
+use App\Clients;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -11,33 +11,43 @@ class ClientsController extends Controller
 {
     public function index()
     {
-        return Client::all();
+        return Clients::all();
     }
 
     public function show($id)
     {
-        return Client::find($id);
+        return Clients::find($id);
     }
 
-    public function store()
+    public function store(Request $request)
     {
+        $client = new Clients();
 
-    }
-
-    public function update($id)
-    {
-        $client = Client::find($id);
-
-        $client->nom            = Input::get('nom');
-        $client->prenom         = Input::get('prenom');
-        $client->email          = Input::get('email');
-        $client->telephone      = Input::get('telephone');
+        $client->nom        = $request->nom;
+        $client->prenom     = $request->prenom;
+        $client->mail      = $request->mail;
+        $client->telephone  = $request->telephone;
         $client->save();
+        
+        return($client);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $client = Clients::find($id);
+
+        $client->nom        = $request->nom;
+        $client->prenom     = $request->prenom;
+        $client->mail      = $request->mail;
+        $client->telephone  = $request->telephone;
+        $client->save();
+
+        return($client);
     }
 
     public function destroy ($id)
     {
-        $client = Client::find($id);
+        $client = Clients::find($id);
         $$client->delete();
     }
 }

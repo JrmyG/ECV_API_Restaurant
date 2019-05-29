@@ -21,14 +21,22 @@ class ReservationsController extends Controller
 
     public function store()
     {
+        $reservation = Reservation::find($id);
+        
+        $reservation->date_heure    = Input::get('date_heure');
+        $reservation->save();
 
+        return($reservation);
     }
 
     public function update($id)
     {
-        $reservation = Reservation::find($id);
+        $reservation = new Reservation();
+
         $reservation->date_heure    = Input::get('date_heure');
         $reservation->save();
+
+        return($reservation);
     }
 
     public function destroy ($id)
