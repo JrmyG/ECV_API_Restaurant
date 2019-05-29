@@ -1,13 +1,5 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    @section('head')
+@extends('layouts.app')
 
-    @endsection
-</head>
-<body>
-@section('header')
-
+@section("head")
+    @parent
 @endsection
-</body>
-</html>
