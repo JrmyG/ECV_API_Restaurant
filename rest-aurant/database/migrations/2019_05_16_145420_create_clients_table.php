@@ -19,8 +19,9 @@ class CreateClientsTable extends Migration
             $table->string('Prenom');
             $table->string('E-mail');
             $table->string('Telephone');
-            $table->Integer('Id_commande');
+            $table->integer('Id_commande');
             $table->string('Id_réservation');
+            $table->timestamps();
            });
     }
 
@@ -33,4 +34,6 @@ class CreateClientsTable extends Migration
     {
         Schema::dropIfExists('clients');
     }
+
 }
+
