@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Htpp\Controllers;
-use App\Reservation;
+use App\Reservations;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -11,37 +11,31 @@ class ReservationsController extends Controller
 {
     public function index()
     {
-        return Reservation::all();
+        return Reservations::all();
     }
 
     public function show($id)
     {
-        return Reservation::find($id);
+        return Reservations::find($id);
     }
 
-    public function store()
+    public function store(Request $request)
     {
-        $reservation = Reservation::find($id);
+        $reservation = new Reservations();
         
-        $reservation->date_heure    = Input::get('date_heure');
+        $reservation->Date_Heure    = $request->Date_Heure;
         $reservation->save();
 
         return($reservation);
     }
 
-    public function update($id)
+    public function update(Requerst $request, $id)
     {
-        $reservation = new Reservation();
-
-        $reservation->date_heure    = Input::get('date_heure');
-        $reservation->save();
-
-        return($reservation);
+        return Reservations::where('id',$id)->update($request->all());
     }
 
     public function destroy ($id)
     {
-        $reservation = Reservation::find($id);
-        $reservation->delete();
+        $reservation = Reservations::where('id', $id)->delete();
     }
 }

@@ -24,16 +24,13 @@ class CommandesController extends Controller
         //return($commande)
     }
 
-    public function update($id)
+    public function update(Request $request, $id)
     {
-        // $commande = Commande::find($id);
-
-        //return($commande)
+        return Commande::where('id',$id)->update($request->all());
     }
 
     public function destroy ($id)
     {
-        $commande = Commande::find($id);
-        $commande->delete();
+        $commande = Commande::where('id', $id)->delete();
     }
 }

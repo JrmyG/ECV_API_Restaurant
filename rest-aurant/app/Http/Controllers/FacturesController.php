@@ -31,22 +31,13 @@ class FacturesController extends Controller
         return($facture);
     }
 
-    public function update($id)
+    public function update(Request $request, $id)
     {
-        $facture = Facture::find($id);
-
-        $facture->date_heure        = Input::get('date_heure');
-        $facture->etat              = Input::get('etat');
-        $facture->save();
-
-        return($facture);
+        return Facture::where('id',$id)->update($request->all());
     }
 
     public function destroy($id)
     {
-        $facture = Facture::find($id);
-        $facture->delete();
+        $facture = Facture::where('id', $id)->delete();
     }
-
-
 }
