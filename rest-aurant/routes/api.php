@@ -46,10 +46,10 @@ Route::post('commande', 'CommandesController@store');
  * UPDATE AN ITEM AN ITEM
  */
 
-Route::put('factures/{id}', 'FacturesController@update');
-Route::put('reservations/{id}', 'ReservationsController@update');
-Route::put('clients/{id}', 'ClientsController@update');
-Route::put('commandes/{id}', 'CommandesController@update');
+Route::put('facture/{id}', 'FacturesController@update');
+Route::put('reservation/{id}', 'ReservationsController@update');
+Route::put('client/{id}', 'ClientsController@update');
+Route::put('commande/{id}', 'CommandesController@update');
 
 /**
  * DELETE AN ITEM BY HIS ID

@@ -6,6 +6,7 @@ use App\Clients;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
 
 class ClientsController extends Controller
 {
@@ -23,10 +24,10 @@ class ClientsController extends Controller
     {
         $client = new Clients();
 
-        $client->nom        = $request->nom;
-        $client->prenom     = $request->prenom;
-        $client->mail      = $request->mail;
-        $client->telephone  = $request->telephone;
+        $client->Nom            = $request->Nom;
+        $client->Prenom         = $request->Prenom;
+        $client->email          = $request->email;
+        $client->Telephone      = $request->Telephone;
         $client->save();
         
         return($client);
@@ -34,20 +35,11 @@ class ClientsController extends Controller
 
     public function update(Request $request, $id)
     {
-        $client = Clients::find($id);
-
-        $client->nom        = $request->nom;
-        $client->prenom     = $request->prenom;
-        $client->mail      = $request->mail;
-        $client->telephone  = $request->telephone;
-        $client->save();
-
-        return($client);
+        return Clients::where('id',$id)->update($request->all());
     }
 
     public function destroy ($id)
     {
-        $client = Clients::find($id);
-        $$client->delete();
+        $client = Clients::where('id', $id)->delete();
     }
 }
