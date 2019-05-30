@@ -7,6 +7,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import VueApiRequest from 'vue-api-request';
+Vue.use(VueApiRequest);
 
 /**
  * The following block of code may be used to automatically register your
@@ -21,6 +23,7 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('slider-component', require('./components/SliderComponent.vue').default);
+Vue.component('entree-component', require('./components/EntreeComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -30,4 +33,10 @@ Vue.component('slider-component', require('./components/SliderComponent.vue').de
 
 const app = new Vue({
     el: '#app',
+
+
 });
+
+
+
+

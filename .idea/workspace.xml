@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="8f2679a5-9ce1-4d7d-b843-96d30cbe18af" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/rest-aurant/public/img/cajun2.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/rest-aurant/public/img/cajun3.jpg" afterDir="false" />
@@ -21,6 +22,9 @@
       <change beforePath="$PROJECT_DIR$/rest-aurant/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rest-aurant/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/rest-aurant/routes/api.php" afterDir="false" />
     </list>
+=======
+    <list default="true" id="8f2679a5-9ce1-4d7d-b843-96d30cbe18af" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,10 +231,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -264,17 +269,29 @@
       <updated>1558268528277</updated>
       <workItem from="1558268531240" duration="1860000" />
       <workItem from="1558275465712" duration="1337000" />
+<<<<<<< Updated upstream
       <workItem from="1559196187350" duration="7580000" />
+=======
+      <workItem from="1559220752351" duration="325000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="15580000" />
+=======
+    <option name="totallyTimeSpent" value="3522000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,8 +304,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49946696" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.30985916" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989339" visible="true" weight="0.30985916" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.30985916" />
+>>>>>>> Stashed changes
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
