@@ -13,7 +13,6 @@ use Illuminate\Http\Request;
 |
 */
 
-
 /**
  * GET ALL ITEMS OF A TABLE
  */
