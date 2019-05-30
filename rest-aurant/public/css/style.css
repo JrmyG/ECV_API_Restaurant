@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:99;
+    width:100%;
+}
+
+main{
+    background: #1b1e21;
+    color:#fff;
+
+}
+
+.homeButtons {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:35px;
+}
+
+.reservationButton{
+    width: 178px;
+    background: #4c110f;
+    padding: 15px 15px;
+    margin-right:10px;
+    border-radius:10px;
+}
+
+.platButton{
+    width: 128px;
+    background: #761b18;
+    padding: 15px 15px;
+    margin-left:10px;
+    border-radius:10px;
+}
+
+.hooper-indicator.is-active, .hooper-indicator:hover{
+    background-color: #4c110f !important;
+}
+
+.reservation{
+    padding:50px 0;
+}
+
+.reservationButton{
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.reservationButton a, .reservationButton a:hover, .platButton a, .platButton a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.icon.icon-arrowLeft, .icon.icon-arrowRight{
+    background:#fff;
+    border-radius:50%;
+    width:32px;
+    height:32px;
+}
+
+.navbar-expand-lg .navbar-nav{
+    margin-right:5%;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+#reservation{
+    width:50%;
+    padding:75px 40px 25px;
+    margin:auto;
+}
+
+#reservation section{
+    margin-bottom:30px;
+    border-bottom:solid 1px #fff;
+    padding:0 15px 40px 15px;
+}
+
+#reservation p {
+    font-size:18px;
+}
+
+#reservation section:last-child{
+    border:none;
+}
+
+#reservation section button {
+    border:none;
+    background:#4c110f;
+    color:#fff;
+    float:right;
+    padding:15px 20px;
+    border-radius:10px;
+}
+
+#reservation option, #reservation select {
+    border:none;
+    border-bottom:solid 1px #fff;
+    background: #1b1e21;
+    color:#fff;
+    padding-bottom:10px;
+    outline: none;
+}
+
+

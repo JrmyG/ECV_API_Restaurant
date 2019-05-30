@@ -59,3 +59,4 @@ Route::delete('factures/delete/{id}', 'FacturesController@destroy');
 Route::delete('reservations/delete/{id}', 'ReservationsController@destroy');
 Route::delete('clients/delete/{id}', 'ClientsController@destroy');
 Route::delete('commandes/delete/{id}', 'CommandesController@destroy');
+

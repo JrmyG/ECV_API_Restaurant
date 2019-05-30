@@ -1,39 +1,24 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('body')
+    <div id="app">
+        <slider-component />
+    </div>
+    <div role="section" class="reservation">
+        <div  class="reservationHome">
+        <h1>
+            Venez tester nos plats !
+        </h1>
+        <h2> Ce que vous voyez sur Instagram, mangez le en vrai.</h2>
+        </div>
+        <div class="homeButtons">
+    <div class="reservationButton">
+        <a href="{{ url('reservations') }}"> Faire une reservation </a>
+    </div>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- Styles -->
-
-    </head>
-    <body>
-    <main>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{{ url('/') }}">We Cook</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('reservations') }}">Faire une reservation</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ url('plats') }}">Nos plats </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <example-component />
-    </main>
-    </body>
-</html>
+        <div class="platButton">
+            <a href="{{ url('plats') }}"> Voir notre menu </a>
+        </div>
+        </div>
+    </div>
+@endsection
