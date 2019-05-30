@@ -23,10 +23,12 @@ class ClientsController extends Controller
     {
         $client = new Clients();
 
-        $client->nom        = $request->nom;
-        $client->prenom     = $request->prenom;
-        $client->mail      = $request->mail;
-        $client->telephone  = $request->telephone;
+        $client->Nom            = $request->Nom;
+        $client->Prenom         = $request->Prenom;
+        $client->email          = $request->email;
+        $client->Telephone      = $request->Telephone;
+        $client->updated_at     = date("Y-m-d h:i:s");
+        $client->created_at     = date("Y-m-d h:i:s");
         $client->save();
         
         return($client);
@@ -36,13 +38,17 @@ class ClientsController extends Controller
     {
         $client = Clients::find($id);
 
-        $client->nom        = $request->nom;
-        $client->prenom     = $request->prenom;
-        $client->mail      = $request->mail;
-        $client->telephone  = $request->telephone;
+        //return($request);
+
+        $client->Nom            = $request->Nom;
+        $client->Prenom         = $request->Prenom;
+        $client->email          = $request->email;
+        $client->Telephone      = $request->Telephone;
+        $client->Updated_at     = date("Y-m-d h:i:s");
         $client->save();
 
-        return($client);
+        return $client;
+        //return redirect('/contacts')->with('success', 'Contact updated!');
     }
 
     public function destroy ($id)

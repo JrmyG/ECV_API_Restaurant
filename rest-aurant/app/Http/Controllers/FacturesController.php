@@ -24,8 +24,8 @@ class FacturesController extends Controller
     {
         $facture = new Facture();
 
-        $facture->date_heure        = Input::get('date_heure');
-        $facture->etat              = Input::get('etat');
+        $facture->Date_Heure        = $request->Date_Heure;
+        $facture->Etat              = $request->Etat;
         $facture->save();
 
         return($facture);
