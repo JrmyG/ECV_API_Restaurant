@@ -6,7 +6,6 @@ use App\Clients;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Support\Facades\DB;
 
 class ClientsController extends Controller
 {
@@ -25,7 +24,7 @@ class ClientsController extends Controller
         $client = new Clients();
 
         $client->Nom            = $request->Nom;
-        $client->Prenom         = $request->Prenom;
+        $client->Prenom         = $request->Prenom;     
         $client->email          = $request->email;
         $client->Telephone      = $request->Telephone;
         $client->save();
@@ -41,5 +40,8 @@ class ClientsController extends Controller
     public function destroy ($id)
     {
         $client = Clients::where('id', $id)->delete();
+
+        return('Client '.$id.' supprimé');
+
     }
 }
