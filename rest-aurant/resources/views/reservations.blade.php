@@ -1,13 +1,12 @@
 @extends('layouts.app')
 
-
     @section('body')
         <div id="reservation">
         <section id="entrees">
 
             <p> Entrées </p>
 
-            <div id="app">
+            <div id="entree">
             <entree-component />
             </div>
 
@@ -17,15 +16,9 @@
 
             <p> Plats </p>
 
-            <select>
-                <option value="">--Choisissez votre plat--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
-            </select>
+            <div id="plat">
+                <plat-component />
+            </div>
 
         </section>
 
@@ -33,15 +26,9 @@
 
             <p> Desserts </p>
 
-            <select>
-                <option value="">--Choisissez votre dessert--</option>
-                <option value="dog">Dog</option>
-                <option value="cat">Cat</option>
-                <option value="hamster">Hamster</option>
-                <option value="parrot">Parrot</option>
-                <option value="spider">Spider</option>
-                <option value="goldfish">Goldfish</option>
-            </select>
+            <div id="dessert">
+                <dessert-component />
+            </div>
 
         </section>
 

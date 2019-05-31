@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Rest-Aurant</title>
 
     <!-- Fonts -->
     <link href="{{asset("css/style.css")}}" rel="stylesheet">
@@ -19,7 +19,7 @@
     @section('header')
         <header>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="{{ url('/') }}">We Cook</a>
+                <a class="navbar-brand" href="{{ url('/') }}">Rest-Aurant</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

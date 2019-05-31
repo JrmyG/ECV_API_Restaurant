@@ -24,6 +24,9 @@ Vue.use(VueApiRequest);
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('slider-component', require('./components/SliderComponent.vue').default);
 Vue.component('entree-component', require('./components/EntreeComponent.vue').default);
+Vue.component('dessert-component', require('./components/DessertComponent.vue').default);
+Vue.component('plat-component', require('./components/PlatComponent.vue').default);
+Vue.component('listplat-component', require('./components/ListPlatComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -37,6 +40,23 @@ const app = new Vue({
 
 });
 
+const entree = new Vue({
+    el: '#entree',
+
+
+});
+
+const plat = new Vue({
+    el: '#plat',
+
+
+});
+
+const dessert = new Vue({
+    el: '#dessert',
+
+
+});
 
 
 
