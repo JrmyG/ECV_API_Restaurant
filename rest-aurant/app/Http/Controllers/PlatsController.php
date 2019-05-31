@@ -17,7 +17,6 @@ class PlatsController extends Controller
         $request = $client->get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood');
         $response = $request->getBody();
         $response = json_decode($response);
-        // dd($response);
 
         $recettes = $response->meals;
 

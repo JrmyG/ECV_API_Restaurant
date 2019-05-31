@@ -39,5 +39,7 @@ class FacturesController extends Controller
     public function destroy($id)
     {
         $facture = Facture::where('id', $id)->delete();
+
+        return('Facture '.$id.' supprimée');
     }
 }
