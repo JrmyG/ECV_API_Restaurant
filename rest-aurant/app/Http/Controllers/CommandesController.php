@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Htpp\Controllers;
+use App\Commandes_Plats;
 use App\Commande;
 use App\Clients;
 
@@ -26,6 +27,11 @@ class CommandesController extends Controller
         $commande->id_client    = $request->id_client;
         $commande->id_plat      = $request->id_plat;
         $commande->save();
+
+        $cp = new Commandes_Plats();
+        $cp->Commandes_ID       = $commande->id;
+        $cp->Plats_ID           = $request->id_plat;
+        $cp->save();
 
         $client = Clients::where('id',$request->id_client)->update(['id_commande' => $commande->id]);
 
