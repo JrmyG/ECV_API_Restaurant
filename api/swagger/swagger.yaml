@@ -1,0 +1,188 @@
+openapi: 3.0.1
+info:
+  title: Our Swagger Api Documentation
+  description: Api created by Jeremy Guibon , Debbal Sadi and Alexandre Venet
+  version: "1.0"
+servers:
+  - url: 'http://127.0.0.1:8000'
+paths:
+  '/api/reservation/1':
+    put:
+      description: Update a specific data of the table "reservation"
+      responses:
+        default:
+          description: Your "Reservation" has been updated
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/plats:
+    get:
+      description: Display the data of the external API :"themealdb"
+      responses:
+        default:
+          description: Return a JSON object who will get the "plats" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/commandes/delete/1':
+    delete:
+      description: Delete a specific data of the "commandes" table
+      responses:
+        default:
+          description: Your "commande" has been deleted
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/factures:
+    get:
+      description: Display all factures stored in "facture" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "factures" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/facture/1':
+    put:
+      description: Update a specific data of the table "factures"
+      responses:
+        default:
+          description: Return a JSON object who will get the "facture" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/clients/delete/1':
+    delete:
+      description: Delete a specific data of the "clients" table
+      responses:
+        default:
+          description: Your "client" has been deleted
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/commandes:
+    get:
+      description: Display all factures stored in "commandes" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "commandes" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/client:
+    post:
+      description: Create a new "client" entity
+      responses:
+        default:
+          description: Return a JSON object who will get the "client" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /:
+    get:
+      description: Home Page
+      responses:
+        default:
+          description: This is the home page
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/facture:
+    post:
+      description: Display all factures stored in "facture" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "facture" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/reservation:
+    post:
+      description: Display all factures stored in "reservation" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "reservation" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/commande:
+    post:
+      description: Display all factures stored in "commande" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "commande" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/reservations/delete/1':
+    delete:
+      description: Delete a specific data of the "reservations" table
+      responses:
+        default:
+          description: Your "reservations" has been deleted
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/reservations:
+    get:
+      description: Display all factures stored in "reservations" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "reservations" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/commande/1':
+    put:
+      description: Update a specific data of the table "commande"
+      responses:
+        default:
+          description: Your "Commande" has been updated
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  /api/clients:
+    get:
+      description: Display all factures stored in "clients" table
+      responses:
+        default:
+          description: Return a JSON object who will get the "clients" data
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/client/1':
+    put:
+      description: Update a specific data of the table "client"
+      responses:
+        default:
+          description: Your "Client" has been updated
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
+  '/api/factures/delete/1':
+    delete:
+      description: Delete a specific data of the "facture" table
+      responses:
+        default:
+          description: Your "facture" has been deleted
+      servers:
+        - url: 'http://127.0.0.1:8000'
+    servers:
+      - url: 'http://127.0.0.1:8000'
