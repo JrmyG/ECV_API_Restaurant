@@ -2,13 +2,16 @@
     <api-request :resource="MealDB" v-model="myResponse">
 
         <div v-for="(value, name, index) in myResponse" v-if="name === 'body'">
-                <div v-for="meals in value" >
-                    <select v-model="selected">
-                        <option v-for="(meal, name, index) in meals" v-if="meal.strCategory !== 'Dessert' || 'Breakfast' ">
-                            {{meal.strMeal}}
-                        </option>
-                    </select>
-                </div>
+            <div class="listMeal" v-for="meals in value" >
+                <ul v-model="selected">
+                    <li class="meal" v-for="(meal, name, index) in meals">
+                        <div>
+                            <img v-bind:src="meal.strMealThumb">
+                        </div>
+                        <p>{{meal.strMeal}}</p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
 
@@ -16,18 +19,18 @@
 </template>
 
 <script>
+
     import Vue from 'vue'
     import VueResource from 'vue-resource'
     import VueApiRequest from 'vue-api-request'
 
-    Vue.use(VueResource)
-    Vue.use(VueApiRequest)
+    Vue.use(VueResource);
+    Vue.use(VueApiRequest);
 
     export default {
         data () {
             return {
-                myResponse: null,
-                selected: ''
+                myResponse: null
             }
         },
         methods: {
@@ -41,9 +44,4 @@
         }
     }
 
-    const entree = new Vue({
-        el: '#entree',
-
-
-    });
 </script>
